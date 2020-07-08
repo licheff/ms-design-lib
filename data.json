@@ -4,11 +4,11 @@
     "project_name": "Milestone Design Library",
     "project_url": null,
     "copyright_start_year": "2020",
-    "client_name": "Milestone",
+    "client_name": "Milestone Systems",
     "client_url": null,
     "creators": [
         {
-            "name": null,
+            "name": "UX Team",
             "url": null
         }
     ],
@@ -55,6 +55,26 @@
     },
     "groups": [
         {
+            "name": "assets",
+            "title": "Assets",
+            "components": [
+                {
+                    "group": "assets",
+                    "name": "color-palette",
+                    "title": "Colors",
+                    "type": "colors",
+                    "colors": [
+                        "#758E99,#000000,#070809,#0D1012,#111617,#1C2326,#323E43,#3D4C52,#485961,#5D747D,#758E99,#A7B7BE,#BECACF,#D3DBDE,#E2E7E9,#F0F3F4,#F6F8F8,#fff",
+                        "#0099DA,#002433,#002F42,#005275,#00648F,#0076A8,#0FB8FF,#42C7FF,#70D4FF,#B3E8FF,#F0FAFF",
+                        "#FFE700,#292500,#B8A600,#D6C200,#FFE700,#FFF166,#FFFEF0",
+                        "#F10909,#270101,#5D0303,#8F0505,#C00707,#F10909,#F96767,#FEF0F0",
+                        "#FF5900,#290E00,#943400,#C74500,#FF5900,#FF955C,#FFF5F0",
+                        "#22A604,#082801,#115502,#197C03,#22A604,#2EE005,#F3FFF0"
+                    ]
+                }
+            ]
+        },
+        {
             "name": "buttons",
             "title": "Buttons",
             "components": [
@@ -62,7 +82,7 @@
                     "group": "buttons",
                     "name": "primary",
                     "title": "Primary buttons",
-                    "width": "full"
+                    "width": "half"
                 },
                 {
                     "group": "buttons",
@@ -75,9 +95,26 @@
                     "name": "tertiary",
                     "title": "Tertiary buttons",
                     "width": "half"
+                },
+                {
+                    "group": "buttons",
+                    "name": "destructive",
+                    "title": "Destructive buttons",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "inputs",
+            "title": "Inputs",
+            "components": [
+                {
+                    "group": "inputs",
+                    "name": "with-labels",
+                    "title": "Inputs with labels"
                 }
             ]
         }
     ],
-    "version": "1.9.5"
+    "version": "0.1"
 }
