@@ -1,4 +1,4 @@
-# ms-design-lib
+# Milestone Design Library
+### Interactive style guide for web components
 
-
-View: https://licheff.github.io/ms-design-lib.github.io/
+👉🏻 [View it here](https://licheff.github.io/ms-design-lib.github.io/)
