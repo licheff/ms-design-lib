@@ -1,3 +1,9 @@
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+/*Buttons*/
+
 .container {
     display: block
 }
@@ -10,6 +16,19 @@
     margin-right: 16px;
 }
 
+.btn-icon {
+    display: inline-block;
+    width: 100%;
+}
+
+button i {
+    vertical-align: text-bottom;
+}
+
+button {
+    transition: .4s;
+}
+
 .btn-large {
     height: 40px;
     min-width: 80px;
@@ -18,7 +37,6 @@
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 8px 16px 0;
-    transition: 0.4s;
 }
 
 .btn-icon {
@@ -61,7 +79,7 @@
     .btn--secondary:hover:not([disabled]) {
         border: 1px solid #005275;
         color: #005275;
-        background-color: #E8F6FC;
+/*        background-color: #E8F6FC;*/
         cursor: pointer;
     }
     .btn--secondary:disabled {
@@ -84,7 +102,20 @@
         opacity: .35;
         cursor: auto;
     }
-
+    .btn--destructive {
+        background-color: #C00707;
+        color: #fff;
+        border-radius: 2px;
+        border: 0;
+    }
+    .btn--destructive:hover:not([disabled]) {
+        background-color: #8F0505;
+        cursor: pointer;
+    }
+    .btn--destructive:disabled {
+        opacity: .35;
+        cursor: auto;
+    }
 .btn-mid {
     height: 32px;
     min-width: 64px;
@@ -93,7 +124,6 @@
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 8px 16px 0;
-    transition: 0.4s;
 }
 
 .btn-small {
@@ -105,5 +135,53 @@
     padding-left: 8px;
     padding-right: 8px;
     margin: 0 8px 16px 0;
-    transition: 0.4s;
+}
+
+/*Inputs*/
+
+input[type=text] {
+    width: 30%;
+    height: 40px;
+    padding: 12px 12px;
+    margin: 4px 0 16px 0;
+    display: inline-block;
+    border: 1px solid #758E99;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #1C2326;
+    font-size: 14px;
+    font-weight: 500;
+}
+label {
+    color: #6F7070;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 11px;
+    display: block;
+    transition: .4s;
+}
+
+input[type=text]:hover {
+    border: 2px solid black;
+    cursor: text;
+}
+
+input:disabled {
+    opacity: .35;
+}
+
+input[type=text]:placeholder-shown {
+    border: 1px solid #D3DBDE;
+    color: #747475;
+    font-weight: 100;
+}
+
+input[type=text]:focus {
+    border: 1px solid #0099da;
+}
+
+#message { 
+    height: 200px;
+    resize: vertical;
+    overflow: auto;
 }
